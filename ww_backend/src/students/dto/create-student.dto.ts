@@ -2,17 +2,17 @@ import { ApiProperty } from "@nestjs/swagger"
 
 export class CreateStudentDto {
     @ApiProperty()
-    firstName: string;
+    productName: string;
 
     @ApiProperty()
-    lastName: string;
+    price: number;
 
     @ApiProperty({required: false})
-    age?: number;
+    tamaño?: string;
 
     @ApiProperty()
-    house: string;
+    cantidad: string;
 
     @ApiProperty()
-    level: string;
+    descuento: string;
 }
